@@ -1,6 +1,12 @@
+* {
+      box-sizing: border-box;
+
+}
 body {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+
 }
 
 div {
@@ -18,12 +24,19 @@ div {
 }
 
 .carousel__item img {
-      width: 50%;
+      width: 65%;
       height: 50vh;
       background-size: cover;
       display: table;
       margin: auto;
       border-radius: 10px;
+}
+
+.carousel__item .isDisabled {
+      color: currentColor;
+      cursor: not-allowed;
+      opacity: 0.5;
+      text-decoration: none;
 }
 
 .carousel__slides {
@@ -148,4 +161,13 @@ button {
 .bounce, .zoomIn, .bounceInRight, .fadeInDown {
       opacity: 1;
       transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 400px) {
+      .carousel__item {
+            font-size: smaller;
+      }
+      .carousel__item img {
+            width: 95%;
+      }
 }
