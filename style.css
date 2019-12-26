@@ -4,6 +4,7 @@
 body {
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
 }
 
 nav {
@@ -23,7 +24,7 @@ nav a {
       width: 100%;
       height: calc(100vh);
       background: url('./assets/mountain-view.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      background-size: 100%;
       position: relative;
       z-index: -1;
 }
@@ -84,6 +85,7 @@ div {
 .carousel__item h3 {
       font-size: xx-large;
       letter-spacing: 1.5px;
+      margin-top: 20px;
 }
 
 .carousel__item i {
@@ -189,13 +191,4 @@ button {
 .bounce, .zoomIn, .bounceInRight, .fadeInDown {
       opacity: 1;
       transition: 0.5s ease-in-out;
-}
-
-@media only screen and (max-width: 400px) {
-      .carousel__item {
-            font-size: smaller;
-      }
-      .carousel__item img {
-            width: 95%;
-      }
 }
