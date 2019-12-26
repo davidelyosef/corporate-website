@@ -51,7 +51,10 @@
 } 
 @media only screen and (max-width: 260px) {
     .hero-back {
-          background-size: 250%;
+          background: url('./assets/image4.jpg');
+    }
+    .hero-back img {
+        display: none;
     }
     nav a {
           font-size: 13px;
