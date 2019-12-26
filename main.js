@@ -26,15 +26,17 @@
         run();
     });
 
+    const bg_size = parseInt($(".hero-back").css('background-size'));
     $(window).scroll(function () {
-        var scrollPos = $(this).scrollTop();
+        const scrollPos = $(this).scrollTop();
         $(".hero-back").css({
-            'background-size': 100 + scrollPos + '%'
+            'background-size': bg_size + scrollPos + '%'
         });
+        // console.log(parseInt($(".hero-back").css('background-size')));
     });
 
     function run() {
-        var slider = document.querySelector('.js-carousel');
+        const slider = document.querySelector('.js-carousel');
         lory(slider, {
             infinite: 1,
             enableMouseEvents: true,
