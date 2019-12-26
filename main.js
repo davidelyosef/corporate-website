@@ -26,6 +26,13 @@
         run();
     });
 
+    $(window).scroll(function () {
+        var scrollPos = $(this).scrollTop();
+        $(".hero-back").css({
+            'background-size': 100 + scrollPos + '%'
+        });
+    });
+
     function run() {
         var slider = document.querySelector('.js-carousel');
         lory(slider, {
