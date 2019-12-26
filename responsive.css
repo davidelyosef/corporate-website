@@ -1,0 +1,71 @@
+@media only screen and (max-width: 550px) {
+    .hero-back {
+          background-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .carousel__item {
+          font-size: smaller;
+    }
+    .carousel__item img {
+          width: 95%;
+          background-size: 130%;
+    }
+    .hero-back {
+          background-size: 150%;
+    }
+    .hero-back img {
+          width: 140%;
+          height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hero-back {
+          background-size: 200%;
+    }
+    .hero-back h1{
+          font-size: 25px;
+    }
+    .hero-back h3{
+          font-size: 19px;
+    }
+    #skills #languages img{
+          width: 60px;
+          height: 60px;
+          margin: 10px;
+    }
+    #skills .logoSkill {
+          text-align: center;
+          width: 220px;
+    }
+    #skills .logoSkill p {
+          width: 200px;
+          font-size: 14px;
+    }
+    #footer a img {
+          width: 30px;
+          height: 30px;
+    }
+} 
+@media only screen and (max-width: 260px) {
+    .hero-back {
+          background-size: 250%;
+    }
+    nav a {
+          font-size: 13px;
+    }
+    .carousel__item {
+          font-size: 10px;
+    }
+    .carousel__item h3 {
+          font-size: 20px;
+    }
+    .carousel__item a {
+          font-size: 10px;
+          width: 80px;
+          height: 30px;
+          margin: none;
+    }
+}
