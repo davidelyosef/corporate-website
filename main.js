@@ -1,4 +1,6 @@
 (() => {
+    const mountains = document.querySelector('.hero-back');
+    const bg_size = parseInt(getComputedStyle(mountains).backgroundSize);
 
     document.addEventListener("scroll", () => {
         const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -20,19 +22,13 @@
         if (scrolled === scrollable) {
             fadeIn.classList.add('fadeInDown', 'animated');
         }
+
+        // parallax zoom in
+        mountains.style.backgroundSize = bg_size + scrolled + '%';
     });
 
     document.addEventListener('DOMContentLoaded', function () {
         run();
-    });
-
-    const bg_size = parseInt($(".hero-back").css('background-size'));
-    $(window).scroll(function () {
-        const scrollPos = $(this).scrollTop();
-        $(".hero-back").css({
-            'background-size': bg_size + scrollPos + '%'
-        });
-        // console.log(parseInt($(".hero-back").css('background-size')));
     });
 
     function run() {
