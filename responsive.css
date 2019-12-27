@@ -31,6 +31,9 @@
     .hero-back h3{
           font-size: 19px;
     }
+    .hero-back img {
+        display: none;
+    }
     #skills #languages img{
           width: 60px;
           height: 60px;
@@ -52,9 +55,6 @@
 @media only screen and (max-width: 260px) {
     .hero-back {
           background-size: 220%;
-    }
-    .hero-back img {
-        display: none;
     }
     nav a {
           font-size: 13px;
