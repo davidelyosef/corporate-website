@@ -173,7 +173,8 @@ button {
 #skills #languages img {
       width: 120px;
       height: 120px;
-      box-shadow: 2px 2px 2px 2px gray;
+      -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
       margin: 30px;
       border-radius: 50%;
       display: inline-block;
