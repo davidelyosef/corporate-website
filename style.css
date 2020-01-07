@@ -23,18 +23,10 @@ nav a {
 .hero-back {
       width: 100%;
       height: calc(100vh);
-      background: url('./assets/mountain-view.jpg') no-repeat 50% 50%;
+      background: url('./assets/background.jpg') no-repeat 50% 50%;
       background-size: 100%;
       position: relative;
       z-index: -1;
-}
-
-.hero-back img {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: -3;
 }
 
 div {
