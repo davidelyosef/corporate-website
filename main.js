@@ -1,6 +1,4 @@
 (() => {
-    const mountains = document.querySelector('.hero-back');
-    const bg_size = parseInt(getComputedStyle(mountains).backgroundSize);
 
     document.addEventListener("scroll", () => {
         const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -22,9 +20,6 @@
         if (scrolled === scrollable) {
             fadeIn.classList.add('fadeInDown', 'animated');
         }
-
-        // parallax zoom in
-        mountains.style.backgroundSize = bg_size + scrolled + '%';
     });
 
     document.addEventListener('DOMContentLoaded', function () {
